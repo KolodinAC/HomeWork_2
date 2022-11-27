@@ -4,12 +4,19 @@ Console.WriteLine("Введите любое число от 10 до 999:");
 
 int a = int.Parse(Console.ReadLine());
 
-if (a > 99 & a < 1000)
+if (a > 999)
 {
-    int lastNumber = a % 10;
-    Console.WriteLine(lastNumber);
+    Console.WriteLine("Вы ввели слишком большое число, введите, пожалуйста, число не более 999");
 }
 else
 {
-    Console.WriteLine("Вы ввели не трехзначное число, у которого нет третьей цифры");
+    if (a > 99 & a < 1000)
+    {
+        int lastNumber = a % 10;
+        Console.WriteLine(lastNumber);
+    }
+    else
+    {
+        Console.WriteLine("Вы ввели не трехзначное число, у которого нет третьей цифры");
+    }
 }
