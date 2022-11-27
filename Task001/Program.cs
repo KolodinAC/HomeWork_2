@@ -4,7 +4,7 @@ Console.WriteLine("Введите любое трехзначное число:"
 
 int a = int.Parse(Console.ReadLine());
 
-if (a < 100 & a > 999)
+if(a < 100 | a > 999)
 {
     Console.WriteLine("Вы ввели не трехзначное число");
 }
