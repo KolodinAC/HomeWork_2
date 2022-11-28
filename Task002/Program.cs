@@ -4,12 +4,18 @@ Console.WriteLine("Введите любое число от 10 до 999:");
 
 int a = int.Parse(Console.ReadLine());
 
-if (a < 100)
+int count = 0;
+if (a > 99)
 {
-    Console.WriteLine("Вы ввели не трехзначное число, у которого нет третьей цифры");
+    while (a > 999)
+    {
+        count = a / 10;
+        a = count;    
+    }
+    int result = a % 10;
+    Console.WriteLine(result);
 }
 else
 {
-    String str = a.ToString();
-    Console.WriteLine(str[2]);
+    Console.WriteLine("У вашего числа нет третьей цифры");
 }
