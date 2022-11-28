@@ -1,6 +1,6 @@
 ﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-Console.WriteLine("Введите любое число от 10 до 999:");
+Console.WriteLine("Введите заданное число для поиска 3 цифры:");
 
 int a = int.Parse(Console.ReadLine());
 
@@ -13,7 +13,7 @@ if (a > 99)
         a = count;    
     }
     int result = a % 10;
-    Console.WriteLine(result);
+    Console.WriteLine("Третья цифра вашего числа равняется " + result);
 }
 else
 {
